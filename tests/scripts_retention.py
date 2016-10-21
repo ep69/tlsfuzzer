@@ -144,6 +144,10 @@ def run_rsa_cert_tests(server_cmd):
                       'test-invalid-compression-methods.py',
                       'test-invalid-content-type.py',
                       'test-invalid-rsa-key-exchange-messages.py',
+                      'test-invalid-server-name-extension.py',
+                      # test requires support for multiple virtual hosts on
+                      # server side
+                      #'test-invalid-server-name-extension-resumption.py',
                       # not verified correctly by tlslite-ng
                       #'test-invalid-session-id.py',
                       'test-invalid-version.py',
